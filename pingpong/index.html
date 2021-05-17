@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+    <!-- making the conection with the css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- referencing an icon image-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--font style brought from a website -->
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<header>
+  <nav>
+    <!-- Drawer is an element that contains other elements. In this case it's a lateral menu panel-->
+    <!-- The check box element allows the user to select the drawer/menu-->
+    <input type="checkbox" id="ckbox">
+    <label for="ckbox" class="drawer">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+
+    <h1>TimeMachine</h1>
+    <!--the list element is to specify a menu. The class "fa fa" imports icons from a website -->
+    <!-- with the "a" element we are creating a "link" and with "href" we give a direction-->
+    <ul class="boxmenu">
+      <li><a href="index.html" class="fa fa-home">home</a></li>
+    <li><a href="game.html" class="fa fa-code">code</a></li>
+    <li><a href="lecture.html" class="fa fa-gamepad">History</a></li>
+    <li><a href="#login" class="menulogin-2"> Log In </a>
+        </li>
+    </ul>
+    <!-- second menu for the log in and sign up button. With the anchor element we point to the sign up area of the index document. We stylize the elemnts in the form of a button-->
+
+    <ul class="boxmenu2">
+      <li><a href="#login" class="menulogin">
+          <button type="button" name="button" class="buttonicon2"> Log In </button></a>
+          </li>
+          <li><a href="#login" class="menulogin">
+              <button type="button" name="button" class="buttonicon2"> Sign Up </button></a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+<section>
+  <!-- div to create a banner image-->
+  <div class="banner">
+    <h1>NEVER STOP LEARNING</h1>
+    <h2>Discover, learn and play</h2>
+    <!-- adding buttons with the anchor element-->
+<a href="#login">
+    <button type="button" name="button" class="buttonicon"> SIGN UP </button></a>
+</div>
+
+
+</section>
+<section>
+  <div class="about">
+  <img src="images/learn.png" alt="GirlWithComputer" class="learn" /> <h2 style="font-size:5vw">The world's best education</h2>
+<br>
+       <p> <strong>TheTimeMachine</strong> is the response to Covid-19 effects to the education around the world.
+      At <strong>TheMachine game studios</strong> our employes used their free time to create an educational
+      project for the young minds, and not so young, willing to expand their knowledge and prove that learning can be both useful and entertaining.
+      Trough this course we are looking back to the past to know about video games and history!
+          </p>
+
+  </div>
+</section>
+
+
+<section>
+<div class="about2">
+
+  <h2 style="font-size:4vw"><strong>Why to do this course? </strong></h2>
+  <div class="column">
+
+
+  <div class="column1">
+<h3> <strong> Learn what, where and when you want</strong></h3>
+    <p> <img src="Favorites/codeicon.png" alt="computericon" class="icon"> <strong>L</strong>earn basic coding to be able <br> to do your own video game!</p>
+    <p> <img src="Favorites/gamepad.png" alt="game pad"class="icon"> <strong>Y</strong>ou will learn history of videogames</p>
+    <p> <img src="Favorites/timetable.png" alt="calendar"class="icon"> <strong>A</strong>ccses any time and anywhere  </p>
+
+  </div>
+  <div class="column2">
+     <h3> <strong> Trusted by more than 500 students</strong></h3>
+    <p><img src="Favorites/chat.png" alt="bubble chat"class="icon"> <strong>E</strong>xcelent customer service</p>
+    <p> <img src="Favorites/price.png" alt="price ticket"class="icon"> <strong>I</strong>t's Free</p>
+    <p> <img src="Favorites/graduate.png" alt="graduation hat" class="icon"> <strong>I</strong>t's certified.</p>
+  </div>
+
+
+
+</div>
+
+</div>
+</section>
+<section>
+  <!--The id is for the anchor elements to be redirected in the sign up area -->
+  <div class="signuparea" id="login">
+
+<!-- the "form" statement creates the elemnts to create a form. action attribute is to specify the URL of a form.
+Method refers to the way used to send data.
+Label is used as an attribute of the form element.Labelling elements helps the user to navigate the website, as the label makes easier to click
+certain areas.-->
+  <form class="signup" action="index.html" method="post">
+    <label>Email:</label>
+    <input type="email" name="youEmail" value=""> <br>
+    <label>Password:</label>
+    <input type="password" name="yourPasswprd" value=""> <br>
+<!-- Input creates the input button and function -->
+<label style="display:none">Submit</label>
+    <input type="submit" name="submit">
+<p style="color: white">Don't remeber your account details? <a href="#">Get some help</a> </p>
+  </form>
+  </div>
+</section>
+<footer>
+  <p>Ali Siddibeh Kurubally. P2569578. Tech1015 CW2 project</p>
+</footer>
+  </body>
+</html>
